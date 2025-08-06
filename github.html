@@ -1,8 +1,163 @@
-<!doctype html>
-<html>
-<h1> Gente Grande</h1>
-  <head>
-  </head>
-  <body>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pantera Negra - Menu Interativo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    /* CAPA */
+    .capa {
+      background-image: url("imagens/capa.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .capa h1 {
+      font-size: 3.5em;
+      color: #00c3ff;
+      text-shadow: 2px 2px 10px black;
+      animation: fadeInDown 1.2s ease;
+    }
+
+    .capa p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 5px black;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* MENU */
+    nav {
+      background-color: #000;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #00c3ff;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #007fa3;
+      transform: scale(1.05);
+    }
+
+    /* CONTEÚDO */
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #00c3ff;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CAPA -->
+  <div class="capa">
+    <h1>Gente Grande</h1>
+    <p>"O filme fala sobre a importância da amizade, da família e de saber aproveitar os momentos simples da vida"</p>
+  </div>
+
+  <!-- MENU -->
+  <nav>
+    <a href="#sinopse">Sinopse</a>
+    <a href="#elenco">Elenco</a>
+    <a href="#trailer">Trailer</a>
+    <a href="#galeria">Galeria</a>
+  </nav>
+
+  <!-- SEÇÕES -->
+  <section id="sinopse">
+    <h2>Sinopse</h2>
+    <p>Após a morte de seu pai, T’Challa retorna para a nação africana de Wakanda para assumir seu lugar como rei. Porém, quando um poderoso inimigo reaparece, T’Challa deve reunir seus aliados e liberar todo o poder do Pantera Negra para proteger seu povo e o mundo.</p>
+  </section>
+
+  <section id="elenco">
+    <h2>Elenco</h2>
+    <p>Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Letitia Wright, Danai Gurira, Martin Freeman.</p>
+  </section>
+
+  <section id="trailer">
+    <h2>Trailer</h2>
+    <p><a href="https://www.youtube.com/watch?v=xjDjIWPwcPU" target="_blank" style="color:#00c3ff; text-decoration: underline;">Assista ao trailer oficial</a></p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <p>Em breve: imagens épicas de Wakanda!</p>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 Página de Gente Grande</p>
+  </footer>
+
+</body>
 </html>
