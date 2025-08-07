@@ -9,12 +9,42 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #111;
       color: white;
+    }
+
+    /* MENU FIXO */
+    nav {
+      background-color: #000;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #00c3ff;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background-color: #007fa3;
+      transform: scale(1.05);
     }
 
     /* CAPA */
@@ -68,36 +98,9 @@
       }
     }
 
-    /* MENU */
-    nav {
-      background-color: #000;
-      padding: 20px 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      background-color: #00c3ff;
-      padding: 12px 20px;
-      margin: 10px;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #007fa3;
-      transform: scale(1.05);
-    }
-
-    /* CONTEÚDO */
+    /* SEÇÕES */
     section {
-      padding: 40px 20px;
+      padding: 100px 20px 40px;
       max-width: 800px;
       margin: 0 auto;
       text-align: center;
@@ -108,6 +111,7 @@
       margin-bottom: 10px;
     }
 
+    /* RODAPÉ */
     footer {
       background-color: #000;
       color: #aaa;
@@ -119,47 +123,38 @@
 </head>
 <body>
 
+  <!-- MENU FIXO -->
+  <nav>
+    <a id="btn-sinopse">Sinopse</a>
+    <a id="btn-elenco">Elenco</a>
+    <a id="btn-trailer">Trailer</a>
+    <a id="btn-galeria">Galeria</a>
+  </nav>
+
   <!-- CAPA -->
   <div class="capa">
     <h1>Gente Grande</h1>
     <p>"O filme fala sobre a importância da amizade, da família e de saber aproveitar os momentos simples da vida"</p>
   </div>
 
-  <!-- MENU -->
-  <nav>
-    <a href="#sinopse">Sinopse</a>
-    <a href="#elenco">Elenco</a>
-    <a href="#trailer">Trailer</a>
-    <a href="#galeria">Galeria</a>
-  </nav>
-
   <!-- SEÇÕES -->
-  <section id="sinopse">
-    <h2>Sinopse</h2>
+  <section>
+    <h2>Conheça um pouco sobre o filme</h2>
     <p>"Gente Grande" (Grown Ups) é uma comédia de 2010 sobre cinco amigos de infância que se reencontram após 30 anos para o funeral de seu treinador de basquete.
-       O filme acompanha o grupo de amigos, agora casados e com filhos, enquanto passam o fim de semana de 4 de julho em uma casa no lago, tentando reviver os bons tempos e redescobrindo que envelhecer não significa necessariamente amadurecer. </p>
+       O filme acompanha o grupo de amigos, agora casados e com filhos, enquanto passam o fim de semana de 4 de julho em uma casa no lago, tentando reviver os bons tempos e redescobrindo que envelhecer não significa necessariamente amadurecer. 😀 </p>
   </section>
 
-  <section id="elenco">
+  <section>
     <h2>Elenco</h2>
-    <p></p>
+    <p>Um time de estrelas que transforma cada cena em pura diversão. Conheça quem dá vida a essa comédia inesquecível! 🌟</p>
   </section>
 
-  <section id="trailer">
+  <section>
     <h2>Trailer</h2>
-    <p><a href="https://www.youtube.com/watch?v=xjDjIWPwcPU" target="_blank" style="color:#00c3ff; text-decoration: underline;">Assista ao trailer oficial</a></p>
+    <p>Assista ao trailer e prepare-se para rir, se emocionar e relembrar que crescer não significa deixar de se divertir. 🍿</p>
   </section>
 
-  <section id="galeria">
+  <section>
     <h2>Galeria</h2>
-    <p>Em breve: imagens épicas de Wakanda!</p>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer>
-    <p>© 2025 Página de Gente Grande</p>
-  </footer>
-
-</body>
-
-</html>
+    <p>Imagens épicas de cenas do filme Gente Grande. 😱</p>
+  </section
