@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinopse</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .segunda-pagina {
+      padding: 120px 20px 60px;
+      max-width: 800px;
+      margin: 0 auto;
+      animation: fadeInDown 1s ease;
+      text-align: center;
+    }
+
+    .segunda-pagina h2 {
+      color: #00c3ff;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 5px black;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border: 4px solid #007BFF;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Sinopse
+  </header>
+
+  <div class="segunda-pagina">
+    <h2>Gente Grande 1</h2>
+
+    <div class="video-container">
+      <!-- Substitua o link abaixo pelo vídeo desejado -->
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+	
+	<p>Trailer do filme: Gente Grande 1</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Página de Gente Grande</p>
+  </footer>
+
+</body>
+</html>
