@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Elenco</title>
@@ -8,6 +10,7 @@
            margin-left: 33px; /* Margem esquerda */
            margin-right: 33px; /* Margem direita */
            margin-bottom: 0px; /* Margem inferior */ 
+           background-color: black;
           }
 
           header {
@@ -20,6 +23,37 @@
            background-color: blue;
            text-align: center;
           }
+           
+          div.protag { 
+            display:flex; 
+            gap: 150px;
+            justify-content: center;
+            flex-basis: 25%;
+            
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .esposa{
+          
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+          }
+          .img-esposa{
+
+          }
+           
+          img {
+            width: 200px;
+            height: 350px;
+          }
+
+          p {
+            color: white;
+
+          }
+          
     </style>
   </head>
 
@@ -30,14 +64,47 @@
   <hr >
 
 </header>
-    
-<img src="img/adan-sandler.webp" width="100px" height="150px" alt="Adam Sandler">
-<img src="img/chris-rock.jpg" width="100px" height="150px" alt="Chris Rock">
-<img src="img/kevin-james.webp" width="100px" height="150px" alt="Kevin James">
-<img src="img/david-spade.webp" width="100px" height="150px" alt="David Spade">
-<img src="img/salma-hayek.jpg" width="100px" height="150px" alt="Salma Hayek">
-<img src="img/maya-rudolph.jpg" width="100px" height="150px" alt="Maya Rudolph">
-<img src="img/maria-bello.jpg" width="100px" height="150px" alt="Maria Bello"> 
+  <div class="protag">
+      
+        <div class="protag-img">
+          <img src="img/adan-sandler.webp" alt="Adam Sandler">
+          <p><strong>Adan Sandler</strong></p>
+        </div>
 
-</body> 
+        <div class="protag-img">
+        <img src="img/chris-rock.jpg" alt="Chris Rock">
+        <p><strong>Chris Rock</strong></p>
+        </div>
+
+        <div class="protag-img">
+        <img src="img/kevin-james.webp" alt="Kevin James">
+        <p><strong>Kevin James</strong></p>
+        </div>
+
+        <div class="protag-img">
+        <img src="img/david-spade.webp" alt="David Spade">
+        <p><strong>David Spade</strong></p> 
+        </div>
+</div>
+
+<div class="esposa">
+    <div class="img-esposa">
+      <img src="img/salma-hayek.jpg" alt="Salma Hayek">
+      <p><strong>Salma Hayek</strong></p>
+    </div>
+    <div class="img-esposa">
+    <img src="img/maya-rudolph.jpg" alt="Maya Rudolph">
+    <p><strong>Maya Rudolph</strong></p>
+    </div>
+    <div class="img-esposa">
+    <img src="img/maria-bello.jpg" alt="Maria Bello"> 
+    <p><strong>Maria Bello</strong></p>
+    </div>
+
+  </div> 
+   <!-- Rodapé -->
+  <footer>
+    <p> 2025 página de Gente Grande 1</p>
+  </footer>
+ </body> 
 </html> 
